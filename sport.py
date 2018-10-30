@@ -16,9 +16,12 @@ SIM_TYPE = 'parallel'  # {'series', 'parallel'}
 
 
 def main():
-    for SPORT_seed in [2255]:
-        for scn_type in ['scn1', 'scn2', 'scn3']:
-            SPORT(scn_type, SPORT_seed, 'amount_loaded')
+    scn_seed_combinations = [('scn1', 12394), ('scn1', 90795),
+                             ('scn2', 12394), ('scn2', 39372), ('scn2', 90795),
+                             ('scn3', 90795)]
+
+    for scn_type, SPORT_seed in scn_seed_combinations:
+        SPORT(scn_type, SPORT_seed, 'amount_loaded')
 
 
 # noinspection PyPep8Naming
@@ -33,7 +36,7 @@ def SPORT(scn_type, SPORT_seed, demand_proxy):
     # THIS CODE GENERATES THE SPORT SCENARIO FILE AS SEEN BELOW
     TEP_node_idx = 7
     SPORT_rndstrm = npr.RandomState(SPORT_seed)
-    theater_name = 'helly_' + scn_type + '_' + demand_proxy + '_' + str(SPORT_seed)
+    theater_name = scn_type + '_' + demand_proxy + '_' + str(SPORT_seed)
     planning_horizon = 150  # units of days
     warm_up = 280  # units of days
     post_ph = 30  # units of days
