@@ -1,4 +1,5 @@
 # Long-term forecasting of fuel demand at theater entry points
+![SPORT Project Logo](https://github.com/bjl2n/sport/blob/master/sport_icon.png "SPORT Project Logo")
 
 This is the simulation code that accompanies the paper titled 'Long-term forecasting of fuel demand at theater entry points' 
 by Lobo B., Brown D., and Grazaitis P. that has been accepted for publication in the International Journal of Forecasting.
@@ -6,5 +7,5 @@ by Lobo B., Brown D., and Grazaitis P. that has been accepted for publication in
 ### Running the code
 Running `sport.py` will run the simulation and produce the simulation output used in the paper.
 
-### Author
+### Code author
 **Ben Lobo** - [*Research Scientist, University of Virginia*](http://www.people.virginia.edu/~bjl2n/)
