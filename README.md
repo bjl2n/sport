@@ -6,6 +6,7 @@ by Lobo B., Brown D., and Grazaitis P. that appears in Volume 35, Issue 2 of the
 
 ### Publication Information
 Lobo B., Brown D., and Grazaitis P.  Long-term forecasting of fuel demand at theater entry points.  International Journal of Forecasting, 2019; 35(2):502--520.
+
 https://doi.org/10.1016/j.ijforecast.2018.09.001
 
 ### Running the code
